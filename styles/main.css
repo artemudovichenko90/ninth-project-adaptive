@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+
+/*section works */
+.no-gutter {
+    --gutter: 1px;
+    overflow: hidden;
+}
+
+.work {
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.img-work {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
