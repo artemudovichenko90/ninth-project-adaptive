@@ -1,3 +1,6 @@
+ul{
+    padding: 0;
+}
 body {
     font-family: sans-serif;
 }
@@ -12,10 +15,6 @@ body {
     color: #6c7279;
 }
 
-.no-gutter{
-    --gutter: 1px;
-}
-
 /*section features */
 .icon {
     color: #e84545;
@@ -23,7 +22,6 @@ body {
 }
 
 .feature {
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -40,6 +38,7 @@ body {
     color: #2d3033;
     text-transform: uppercase;
 }
+/*section work */
 
 .work {
     min-height: 350px;
@@ -47,47 +46,47 @@ body {
 }
 
 .img-work {
-    height: 100%;
-    width: 100%;
-    object-position: center;
-    object-fit: cover;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*object-position: center;*/
+    /*object-fit: cover;*/
 }
 
 /*section teams */
+
+#teams{
+}
 .person {
-    /*прижать к низу,если нужно*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    position: relative;
     max-width: 270px;
     box-sizing: border-box;
 }
 
-.img-wrapper { /* ОЦЕНИТЬ!!!!*/
-    position: relative;
-    width: 100%;
-}
+/*.img-wrapper { !* ОЦЕНИТЬ!!!!*!*/
+/*    position: relative;*/
+/*}*/
 
-.img-wrapper:after { /* ОЦЕНИТЬ!!!!*/
-    content: "";
-    padding-top: 100%;;
-    display: block;
-}
+/*.img-wrapper:after { !* ОЦЕНИТЬ!!!!*!*/
+/*    content: "";*/
+/*    padding-top: 100%;;*/
+/*    display: block;*/
+/*}*/
 
+/*.img-person {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
 
+/*}*/
 .img-person {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    aspect-ratio:1/1;
     object-fit: cover;
-    object-position: center;
-
+    object-position: top;
 }
-
 .person-content {
     margin-top: 20px;
-    /*прижать к низу,если нужно*/
-    /*flex: 1 1 auto;*/
 }
 
 
@@ -108,9 +107,8 @@ body {
 .social-icons {
     display: flex;
     flex-wrap: wrap;
-    /*прижать к низу,если нужно №2*/
+    justify-content: space-evenly;
     margin-top: 30px;
-    /*margin-top: auto;*/
 }
 
 .social-icons a {
@@ -119,7 +117,6 @@ body {
     align-items: center;
     height: 40px;
     width: 40px;
-    margin-right: 8px;
     border: 1px solid #e8ecee;
     text-decoration: none;
     border-radius: 2px;
@@ -133,32 +130,8 @@ body {
     color: #fff;
 }
 
-@media screen and (max-width: 1199px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px){
     .person {
-        margin: 0 auto 50px;
-    }
-
-    .person-content {
-        text-align: center;
-    }
-
-    .social-icons a {
-        margin-bottom: 5px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .container {
-        width: 750px;
-    }
-
-    .person {
-        margin-bottom: 50px;
+        margin: 0 0 50px;
     }
 }
